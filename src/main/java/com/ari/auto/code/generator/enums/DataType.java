@@ -24,9 +24,3 @@ public enum DataType {
         return type;
     }
 }
-
-/**
- * Math: Logarithm, complex number, quadratic equation and binomial theorem, vector algebra
- * Physics: Unit and measurement, Force and Motion,
- * Chemistry: Atomic structure, chemical bonding and solution
- */

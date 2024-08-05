@@ -15,8 +15,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class EntityDto {
-    @Schema(description = "Entity Name", example = "ExampleEntityName")
-    @Pattern(regexp = "^[A-Z][a-zA-Z0-9]*$", message = "Invalid patter for EntityName. Example of correct pattern: 'ExampleEntityName'")
+    @Schema(description = "Entity Name", example = "UserDetail")
+    @Pattern(regexp = "^[A-Z][a-zA-Z0-9]*$", message = "Invalid pattern for EntityName. Example of correct pattern: 'UserDetail'")
     private String entityName;
 
     @Valid
