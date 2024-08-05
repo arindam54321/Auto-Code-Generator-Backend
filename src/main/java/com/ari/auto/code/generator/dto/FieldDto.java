@@ -13,9 +13,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class FieldDto {
-    @Schema(description = "Field Name", example = "exampleFieldName")
+    @Schema(description = "Field Name", example = "emailId")
     @Pattern(regexp = "^(?i)(?!is).*", message = "Field name can't be starting with 'is'")
-    @Pattern(regexp = "^[a-z]+([A-Z][a-zA-Z0-9]*)*$", message = "Invalid patter for FieldName. Example of correct pattern: 'exampleFieldName'")
+    @Pattern(regexp = "^[a-z]+([A-Z][a-zA-Z0-9]*)*$", message = "Invalid pattern for FieldName. Example of correct pattern: 'emailId'")
     private String fieldName;
 
     private DataType dataType;

@@ -17,16 +17,16 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProjectDto {
-    @Schema(description = "Project Name", example = "ExampleProjectName")
-    @Pattern(regexp = "^[A-Z][a-zA-Z0-9]*$", message = "Invalid patter for ProjectName. Example of correct pattern: 'ExampleProjectName'")
+    @Schema(description = "Project Name", example = "UserManagementSystem")
+    @Pattern(regexp = "^[A-Z][a-zA-Z0-9]*$", message = "Invalid pattern for ProjectName. Example of correct pattern: 'UserManagementSystem'")
     private String projectName;
 
     @Schema(description = "Group Id", example = "com.example")
-    @Pattern(regexp = "^[a-z]+(\\.[a-z]+)*$", message = "Invalid patter for GroupId. Example of correct pattern: 'com.example'")
+    @Pattern(regexp = "^[a-z]+(\\.[a-z]+)*$", message = "Invalid pattern for GroupId. Example of correct pattern: 'com.example'")
     private String groupId;
 
-    @Schema(description = "Artifact Id", example = "auto.code.generator")
-    @Pattern(regexp = "^[a-z]+(\\.[a-z]+)*$", message = "Invalid patter for ArtifactId. Example of correct pattern: 'auto.code.generator'")
+    @Schema(description = "Artifact Id", example = "user.management.system")
+    @Pattern(regexp = "^[a-z]+(\\.[a-z]+)*$", message = "Invalid pattern for ArtifactId. Example of correct pattern: 'user.management.system'")
     private String artifactId;
 
     @Valid
